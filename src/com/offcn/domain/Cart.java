@@ -15,6 +15,8 @@ public class Cart {//购物车
 	
 	//添加购物车的功能
 	public  void  add2cart(CartItem cartItem) {
+		
+		
 		String pid = cartItem.getProduct().getPid(); //获得当前购物的商品的id
 		//假如这个商品我们之前没有购买过
 		if(!map.containsKey(pid)) {//之前没有加入购物车
